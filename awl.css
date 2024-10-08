@@ -1,0 +1,85 @@
+/*body{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+h2{
+    background: linear-gradient(to left, green, yellow);
+    color: blue;
+
+    display: flex;
+    height: auto;
+
+    justify-content: center;
+    align-items: flex-center;
+    border-radius: 10px;
+}
+h2:hover{
+    height: 100px;
+}
+p{
+    background: linear-gradient(to top, blue , lightblue);
+}
+
+li{
+    display: flex;
+}
+li:hover{
+    display: contents;
+}
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+ul.list1{
+    display: inline-flex;
+}
+
+.list1 > li{
+    list-style: none;
+    width: 70px;
+}
+
+
+.list:hover .list2{
+    display: block;
+}
+
+*/
+body{
+    background: linear-gradient(to top, rgb(114, 207, 238),rgb(175, 136, 136));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}

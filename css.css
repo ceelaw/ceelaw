@@ -1,0 +1,215 @@
+body{
+    background-image: url(h.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+header {
+    background: linear-gradient(to left, skyblue, yellowgreen);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  
+  font-family: "Matemasie", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+  border-top-style: dotted;
+  border-bottom-style: dotted;
+  
+  padding-top: 15px;
+  padding-bottom: 10px;
+  
+  margin-left: 15px;
+  margin-bottom: 25px;
+}
+
+
+p{
+    background: linear-gradient(to left, skyblue, yellowgreen);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    color: aqua;
+    
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: cyan dotted underline;
+}
+
+.border{
+    border-style: outset;
+    border-width: 5px;
+    border-color: gold;
+    border-radius: 10px;
+}
+img{
+    float: left;
+
+    position: left sticky;
+
+}
+.box1{
+    border: 2px solid;
+    height: 300px;
+    width: 300px;
+    background-color: skyblue;
+
+    position:sticky;
+
+    top: 150px;
+    left: 150px;
+}
+.box2{
+    border: 2px solid;
+    height: 100px;
+    width: 100px;
+    background-color: tomato;
+
+    position: absolute;
+
+    top: 100px;
+    left: 100px;
+}
+
+h1{
+    text-shadow: 0px 5px 0px grey;
+}
+
+/* pseudo classes */
+h1:hover{
+    box-shadow: 5px 5px 5px black;
+}
+a:link{
+    color: lawngreen;
+}
+a:visited{
+    color: grey;
+}
+a:hover{
+    color: tomato;
+}
+a:active{
+    color: yellow;
+}
+
+button:hover{
+    background-color: lightgrey;
+}
+button:active{
+    background-color: white;
+}
+
+li:nth-child(1){
+    background-color: yellow;
+}
+li:nth-child(even){
+    background-color: yellow;
+}
+
+/* pseudo elements*/
+
+p::first-letter{
+    font-size: 20px;
+    font-style: italic;
+}
+p::selection{
+    color: white;
+    background: black;
+}
+
+#li1 li::before{
+    content: icon;
+}
+#li1 li::after{
+    content: icon;
+}
+li::marker{
+    color: beige;
+}
+
+
+/* transform */
+#box1{
+    border: 4px solid;
+    width: 250px;
+    height: 250px;
+    font-size: 200px;
+    text-align: center;
+    background: lightskyblue;
+    /* both x and y axis respectively */
+    transform: translate(50px, 50px);
+
+    transform: scale(1, 1);
+    
+    transform: skew(20deg, 20deg);
+
+    animation: 3s ease 0.5s infinite running m;
+    
+}
+
+#box2{
+    width: 300px;
+    height: 300px;
+    font-size: 180px;
+    background: red;
+    text-align: center;
+
+   /* animation: m duration timing-function delay iteration-count direction fill-mode;
+    animation: m;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+   */
+
+    animation: 3s ease 0.5s infinite running m;
+}
+#box3:hover{
+    width: 300px;
+    height: 300px;
+    font-size: 180px;
+    background: red;
+    text-align: center;
+
+    animation: mRotate;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+}
+
+@keyframes m {
+    from{
+        margin-left: 100%;
+    }
+    to{
+        margin-left: 0%;
+    }
+}
+
+@keyframes mRotate{
+    100%{transform: rotateX(360deg);}
+}
+
+@keyframes mOpacity{
+    50%{opacity: 0;}
+}
+
+@keyframes mScale {
+    50%{transform: scale(0.5, 0.5);}
+}
+@keyframes mcolor {
+    20%{background-color: orange;}
+    40%{background-color: yellow;}
+    600%{background-color: green;}
+    80%{background-color: blue;}
+    100%{background-color: purple;}
+}
